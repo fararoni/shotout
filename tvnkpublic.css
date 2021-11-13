@@ -1,0 +1,175 @@
+@font-face {
+
+  font-family: "bodyfont";
+
+  src: url("fonts/Roboto-Bold.ttf");
+
+}
+
+
+
+@font-face {
+
+  font-family: "headfont";
+
+  src: url("fonts/CaviarDreams_Bold.ttf");
+
+}
+
+
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  background-color: white;
+
+}
+
+
+
+.odometer {
+
+  font-size: 28px;
+
+  font-family : "headfont";
+
+  color: white;
+
+   text-align: center;
+
+}
+
+
+
+.channelImage {
+
+  height: 120px;
+
+  width: 120px;
+
+  margin-top: 5px;
+
+  float: center;
+
+  border-radius: 10px;
+
+}
+
+
+
+.channelName {
+
+  white-space: nowrap; 
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  font-family: "headfont";
+
+  font-size: 18px;
+
+  color: white;
+
+  margin-top: 0px;
+
+   text-align: center;
+
+}
+
+
+
+.card-content {
+
+  padding: 5px;
+
+}
+
+
+
+.card {
+
+  display: inline-block;
+
+  height: 200px;
+
+  font-size: 13px;
+
+  width: 130px;
+
+  border: 2px solid rgba(0,0,0,0);
+
+  margin: 4px;
+
+  padding: 1px;
+
+  transition: background-color 1s;
+
+  background-color: black;
+
+  border-radius: 10px;
+
+  position: relative;
+ 
+  text-align: center;
+}
+
+
+  @-webkit-keyframes argh-my-eyes {*/
+  from   { background-color: rgb(255, 255, 255); }
+  to { background-color: #10ff00;
+  color: white;}*/
+  }
+  @-moz-keyframes argh-my-eyes {*/
+  from   { background-color: rgb(255, 255, 255); }
+  to { background-color: #10ff00;
+  color: white;}*/
+  }
+  @keyframes argh-my-eyes {*/
+  from   { background-color: rgb(255, 255, 255); }
+  to { background-color: #10ff00;
+  color: white;
+  }
+
+  }
+  .activee {
+  -webkit-animation: argh-my-eyes 5s infinite alternate;*/
+  -moz-animation:    argh-my-eyes 5s infinite alternate;*/
+  animation:         argh-my-eyes 10s infinite alternate;*/
+  }
+
+
+@keyframes animate {
+
+  0%
+
+  {
+
+    background-position: 0 0;
+
+  }
+
+  50%
+
+  {
+
+    background-position: 300% 0;
+
+  }
+
+  100%
+
+  {
+
+    background-position: 0 0;
+
+  }
+
+}

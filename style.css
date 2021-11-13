@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "bodyfont";
+    src: url("../fonts/CaviarDreams.ttf");
+}
+
+@font-face {
+    font-family: "headfont";
+    src: url("../fonts/CaviarDreams_Bold.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.odometer {
+    font-size: 34px;
+    font-family: "Trebuchet MS";
+    color: white;
+}
+
+.channelImage {
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    float: left;
+    margin-right: 10px;
+}
+
+.channelName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    color: white;
+}
+
+.card-content {
+    padding: 5px;
+}
+
+.card {
+    display: inline-block;
+    height: 70px;
+    font-size: 13px;
+    width: 300px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 75px;
+    margin: 20px;
+    padding: 1px;
+    transition: background-color 1s;
+    background-color: #222222;
+    position: relative;
+}
+
+.channel_1.card:before,
+.channel_1.card:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 500%;
+    z-index: -1;
+    animation: animate 30s ease infinite;
+    border-radius: 70px;
+}
+
+.channel_1.card:after {
+    filter: blur(25px);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 300% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}

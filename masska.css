@@ -1,0 +1,104 @@
+/* All scripts are made by TheoCoding
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+@font-face {
+    font-family: "headfont";
+    src: url("https://cdn.glitch.com/4a2ff7ee-5ae6-479f-b43d-3ec683f2e274%2FCaviarDreams_Bold.ttf?v=1569502953620");
+}
+.odometer {
+    font-size: 25px;
+    font-family : headfont;
+}
+.channel_1.card {
+    background-color: rgba(7,207,246, 1);
+    box-shadow: 0px 0px 15px rgba(7,207,246, 1);
+    transition: 5s;
+}
+.card {
+    box-shadow: 0px 0px 15px #d68888;
+    display: inline-block;
+    width: 275px;
+    margin: 10px;
+    height: 88px;
+    background-color: white;
+    border-style: solid;
+    border-color: grey;
+    border-width: 2px;
+    border-radius: 55px;
+    position: relative;
+}
+.picture {
+    display: inline-block;
+}
+.channelImage {
+    width: 88px;
+    height: 88px;
+    margin: 0px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 2px;
+    border-radius: 55px;
+    float: left;
+    margin-right: 10px;
+}
+.texte {
+    margin-top: 15px;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card-content {
+
+  padding: 5px;
+
+}
+.channelName {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 5px;
+    margin-left: 2%;
+}
+@-webkit-keyframes argh-my-eyes {
+    from {
+        box-shadow: 0px 0px 15px rgb(12, 70, 82);
+        background-color:  white; 
+    }
+    to { 
+        box-shadow: 0px 0px 15px rgb(7,207,246);
+        background-color:#10ff00; 
+    }
+}
+@-moz-keyframes argh-my-eyes {
+    from {
+        box-shadow: 0px 0px 15px rgb(12, 70, 82);
+        background-color:  white; 
+    }
+    to { 
+        box-shadow: 0px 0px 15px rgb(7,207,246);
+        background-color:#10ff00; 
+    }
+}
+@keyframes argh-my-eyes {
+    from {
+        box-shadow: 0px 0px 15px rgb(12, 70, 82);
+        background-color:  white; 
+    }
+    to { 
+        box-shadow: rgb(7,207,246);
+        background-color: #10ff00; 
+    }
+}
+.activee {
+    -webkit-animation: argh-my-eyes 3s infinite;
+    -moz-animation: argh-my-eyes 3s infinite;
+    animation: argh-my-eyes 3s infinite;
+}

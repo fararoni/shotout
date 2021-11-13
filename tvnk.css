@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "bodyfont";
+    src: url("../fonts/roboto.ttf");
+}
+
+@font-face {
+    font-family: "headfont";
+    src: url("../fonts/roboto.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+body {
+    background-color: white;
+}
+
+.odometer {
+    font-size: 32px;
+    font-family: "Arial";
+    color: #212529;
+    font-weight: 200;
+    text-align: center;
+    width: 100px;
+    margin-top: 14px;
+}
+
+.channelImage {
+    height: 240px;
+    width: 240px;
+    float: left;
+    text-align: center;
+    margin-right: 0px;
+    padding: 0px;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.channelName {
+    text-align: center;
+    background-color: #dc3545 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Arial";
+    font-size: 21px;
+    color: white;
+    font-weight: 300;
+    padding: 13px;
+    height: 60px;
+    width: 240px;
+    border-radius: 3px;
+}
+
+.card-content {
+    padding: 0px;
+}
+
+.card {
+    display: inline-block;
+    height: 375px;
+    font-size: 13px;
+    width: 241px;
+    border: 1px solid #dfdfdf;
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFFFFF;
+    position: relative;
+    text-align: center;
+}

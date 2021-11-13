@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "bodyfont";
+    src: url("../fonts/CaviarDreams.ttf");
+}
+
+@font-face {
+    font-family: "headfont";
+    src: url("../fonts/CaviarDreams_Bold.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* Aqui le puedes cambiar el tamaño de la letra de los números*/
+
+.odometer {
+    font-size: 40px;
+    font-family: "Trebuchet MS";
+    color: white;
+}
+
+.channelImage {
+    border-radius: 50%;
+    /* Igualar el tamaño con los de la card */
+    height: 85px;
+    width: 85px;
+    float: left;
+    margin-right: 10px;
+}
+
+.channelName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    color: rgb(221, 32, 32);
+}
+
+.card-content {
+    padding: 5px;
+}
+
+.card {
+    display: inline-block;
+    /* Aquí le cambias el alto a la caja*/
+    height: 90px;
+    font-size: 13px;
+    /* Aquí le cambias el ancho  a la caja*/
+    width: 400px;
+    border: 2px solid rgba(226, 230, 7, 0);
+    /* Aqui redondeas la caja */
+    border-radius: 75px;
+    margin: 40px;
+    padding: 1px;
+    transition: background-color 1s;
+    background-color: #602af7;
+    position: relative;
+}
+
+.channel_1.card:before,
+.channel_1.card:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 500%;
+    z-index: -1;
+    animation: animate 30s ease infinite;
+    border-radius: 70px;
+}
+
+.channel_1.card:after {
+    filter: blur(25px);
+}
+
+
+/* Estilos columnas pancho */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columna {
+    float: left;
+    width: 20%;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 300% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
